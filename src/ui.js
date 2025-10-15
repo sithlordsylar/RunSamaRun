@@ -29,7 +29,7 @@ export function createMenu(rootEl, startCallback, leaderboardCallback) {
 
   // 🎵 Menu BGM fix (global instance)
 	if (!menuBgm) {
-		menuBgm = new Audio('../assets/audio/menu_bgm.mp3');
+		menuBgm = new Audio('./assets/audio/menu_bgm.mp3');
 		menuBgm.loop = true;
 	}
 
