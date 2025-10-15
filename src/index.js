@@ -295,7 +295,7 @@ if (currentState === 'boss' && typingState?.meterActive) {
     // play correct unique sound file
     const sfxFile = ATTACK_SOUNDS[word];
     if (sfxFile) {
-      try { new Audio(`../assets/audio/${sfxFile}`).play().catch(()=>{}); } catch {}
+      try { new Audio(`./assets/audio/${sfxFile}`).play().catch(()=>{}); } catch {}
     }
 
     // show divine word flash
