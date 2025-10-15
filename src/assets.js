@@ -1,8 +1,8 @@
 // src/assets.js
 // Local asset mapping for /assets/images and /assets/audio
 
-const BASE_IMG = "../assets/images";
-const BASE_AUDIO = "../assets/audio";
+const BASE_IMG = "./assets/images";
+const BASE_AUDIO = "./assets/audio";
 
 console.log(">>> Sama-Ji assets.js loaded. Using BASE_IMG:", BASE_IMG);
 
