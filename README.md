@@ -133,13 +133,14 @@ Defeat Ste’Vi Ra, and the heavens will proclaim:
 
 ## 🧘 Choose Your Divine Form
 
-| Mode               | | Description                                                                                                                           |
-| ------------------ | | ---------------------------------------------------------------------------------------------------------------------------------     |
-| **Creation Mode**  | | The serene, primordial architect who predates existence, using the fundamental chant "Owh Yeah!" to structure reality.                |
-| **Loverboy Mode**  | | The irresistible Cosmic Playboy whose 'Kunjimani Keikaku' aura charms even the strongest foes, including the Accursed One and Veesus. |
-| **Annunaki Mode**  | | Supreme ruler of Dimension 69. Created Annunaki to guide Earth, intervened with the Great Flood, and maintains cosmic order.          |
-| **Kunjumani Form** | | The ultimate resetter. He descends from Dimension 69 to destroy and recreate the universe with a massive ritual fusion.               |
-| **Espada Mode**    | | The Cosmic Mariachi Guru who appears as Yeezus, sharing wisdom and miracles via tacos, churros, and a Kunjumonz mariachi band.        |
+| **Mode**           | **Description**                                                                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Creation Mode**  | The serene, primordial architect who predates existence, using the fundamental chant **"Owh Yeah!"** to structure reality.            |
+| **Loverboy Mode**  | The irresistible Cosmic Playboy whose *Kunjimani Keikaku* aura charms even the strongest foes, including the Accursed One and Veesus. |
+| **Annunaki Mode**  | Supreme ruler of Dimension 69. Created the Annunaki to guide Earth, intervened with the Great Flood, and maintains cosmic order.      |
+| **Kunjumani Form** | The ultimate resetter. He descends from Dimension 69 to destroy and recreate the universe with a massive ritual fusion.               |
+| **Espada Mode**    | The Cosmic Mariachi Guru who appears as Yeezus, sharing wisdom and miracles through tacos, churros, and a Kunjumonz mariachi band.    |
+
 
 ---
 
