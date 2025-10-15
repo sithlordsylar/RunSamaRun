@@ -130,13 +130,13 @@ Defeat Ste’Vi Ra, and the heavens will proclaim:
 
 ## 🧘 Choose Your Divine Form
 
-| Mode               | Title                      | Description                     |
-| ------------------ | -------------------------- | ------------------------------- |
-| **Creation Mode**  | *The Still Creator*        | Births realities from the void. |
-| **Loverboy Mode**  | *The Cosmic Playboy*       | Seduces even the divine.        |
-| **Annunaki Mode**  | *The God of Nibiru*        | Guides civilizations to glory.  |
-| **Kunjumani Form** | *The Grand Resetter*       | Ends cycles, begins anew.       |
-| **Espada Mode**    | *The Drip of Danza Koduro* | Bringer of rhythm and tacos.    |
+| Mode               | | Description                     |
+| ------------------ | | ------------------------------- |
+| **Creation Mode**  | | The serene, primordial architect who predates existence, using the fundamental chant "Owh Yeah!" to structure reality.             |
+| **Loverboy Mode**  | | The irresistible Cosmic Playboy whose 'Kunjimani Keikaku' aura charms even the strongest foes, including the Accursed One.         |
+| **Annunaki Mode**  | | Supreme ruler of Dimension 69. Created Annunaki to guide Earth, intervened with the Great Flood, and maintains cosmic order.       |
+| **Kunjumani Form** | | The ultimate resetter. He descends from Dimension 69 to destroy and recreate the universe with a massive ritual fusion.            |
+| **Espada Mode**    | | The Cosmic Mariachi Guru who appears as Yeezus, sharing wisdom and miracles via tacos, churros, and a Kunjumonz mariachi band.     |
 
 ---
 
@@ -150,7 +150,7 @@ Each card represents one of Sama-Ji’s holy fragments, scattered across the cos
 | 2    | Eyes & Head                    | Vikna Otsutsuki, Joshua Joestar, Son Isaac |
 | 3    | Heart                          | Rishi D. Owh Yeah                          |
 | 4    | Torso                          | Mob Siva, The Steroid                      |
-| 5    | Essence                        | Kaiye Tuhar, The Ritual of Creation        |
+| 5    | Essence                        | Kaiye Thunnai, The Ritual of Creation        |
 | 6    | Cosmic Kadavuleh               | The Original Croak                         |
 | 7    | Cosmic Playboy                 | Sama-Ji’s Loverboy Manifestation           |
 | 8    | The Reincarnation: Yezus Clyde | The Messiah of Infinite Drip               |
