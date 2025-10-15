@@ -7,6 +7,23 @@
 
 ---
 
+## **Have you ever wonder what would it be if you're not a mere human being but instead the great and Supreme's supreme Lord Vikramnantha Sama-Ji?**
+
+However we know human technology is not that developed to even be able to simulate 0.00001% of how it feels to be Sama-Ji.
+
+But fear not, through the wahyu of the Head of Sama-Ji: Son-Isaac, the creation power of the Right Eye of Sama-Ji the kama koduro; Vikna Otsutsuki along side of the Kunji-Force of the benevolent; Right Hand of Sama-ji balanced by the pure Chroma™ powered Heart of Sama-Ji; Rishi D. Owh Yeah, reinforced by the steroid of all being the Torso of Sama-Ji; Mob Siva, added with the touch of evil and chaos from the Left Hand of Sama-Ji Melvin Satoru and with a touch of the destruction ability of the Left Eye of Sama-Ji Joshua Joestar and lastly from the overflowing pee-pee of Sama-Ji; Vertine Sosuke the Diddy Daddy of Aizen have all come together to bless us with enough technology to simulate and experience 0.0000069% of Sama-Ji's life by experiencing the 0.000000000000069% of the Great Final Battle, the Apocalypse, the 4th Impact, the final battle to protect the universe from getting Rim Jobbed by Ste'Vi-Ra!
+
+
+## **⚠️WARNING⚠️**
+**Ensure your PC meet this minimum requirement:**
+OS: MacDowNux 69
+CPU: AMTel 6969
+Ram: 69TB
+GPU: Intel Radeon RTX690960-XT Strix
+Storage: 3.142ZB
+
+---
+
 ## 📖 The Book of Owh Yeah (Summary of Divine Lore)
 
 > “Before the beginning, there was no light, no time, no Bleach, no Naruto, no One-Piece, no Boku no Pico and not even Gurren Lagann.
