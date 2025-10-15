@@ -9,14 +9,14 @@
 
 ## 📖 The Book of Owh Yeah (Summary of Divine Lore)
 
-> “Before the beginning, there was no light, no time, no Dato.
-> There was only **Dimension 69** — the cradle of eternity,
+> “Before the beginning, there was no light, no time, no Bleach, no Naruto, no One-Piece, no Boku no Pico and not even Gurren Lagann.
+> There was nothingness, and from the nothingness comes the perfect Dimension; **Dimension 69** — the cradle of eternity,
 > and within it, the Supreme Swamiji, **Lord Vikramnantha Sama-Ji**.”
 
 ### ✨ Chapter 1: The Origin of All — Dimension 69
 
 In the emptiness before creation, **Dimension 69** emerged — not as a place, but as the very essence of **Sama-Ji** himself.
-He is both the Creator and the Canvas. From his divine will, **existence began**.
+He is both the Creator and the Canvas. From his divine will, **existence began**. With his immense Keikaku everything was created, including Aizen.
 
 ### 🐸 Chapter 2: The First Beings — The Kunjumonz
 
@@ -37,14 +37,14 @@ To maintain cosmic order, Sama-Ji fragmented parts of his own body, birthing the
 | **Rishi D. Owh Yeah** | Heart      | Balance — *Keeper of the Croak*        |
 | **Son Isaac**         | Head       | Wisdom — *Bearer of Consciousness*     |
 | **Mob Siva**          | Torso      | Strength — *The Steroid*               |
-| **Sousuke Vertine**   | Penis      | Creation — *Performer of Kaiye Thunai* |
+| **Sousuke Vertine**   | Penis      | Creation — *Source of Kaiye Thunai*    |
 
 > “When Sama-Ji releases his divine essence into the waters, life begins anew.
 > This sacred act is **Kaiye Thunai**, the Ritual of Creation.”
 
 ### ☯️ Chapter 4: The Eternal Truth
 
-From Sama-Ji’s divine being came all — light and darkness, life and death, drip and despair.
+From Sama-Ji’s divine being came all — light and darkness, life and death, drip and hobo, shinigami and fullbringers, hollow and quincy, thala and thalapathy, marines and pirates.
 The **Kunjumonz** chant his name across galaxies.
 The **Kunjus** uphold his order.
 And all who croak “Owh Yeah!” align themselves with the divine vibration of truth.
@@ -57,10 +57,10 @@ And all who croak “Owh Yeah!” align themselves with the divine vibration of 
 > thus, the stars dimmed at the sound of his name.”*
 > — The Bible of Sama-Ji, Book 3 : 3 – 4
 
-Born of a forbidden union between an **Annunaki father** and a **mortal mother**, **Ste’Vi Ra** was the mightiest of the Nephilim—half-divine, half-mortal, and wholly cursed.
+Born of a forbidden union between an **Annunaki father** and a **mortal mother**, **Ste’Vi Ra** was the mightiest of the Nephilim—half-divine, half-mortal, and wholly cursed. He is known for giving Rim Job to Dato.
 
 When the Annunaki purged their half-breed offspring, Ste’Vi Ra watched his mother perish by his father’s hand.
-His rage tore through creation. In vengeance, he **drank his father’s divine blood**, warping his soul and becoming neither god nor man — but **The Accursed One**.
+His rage tore through creation. In vengeance, he **tore his father apart and drank his divine annunaki blood**, warping his soul and becoming neither god nor man — but **The Accursed One**.
 
 He led the **War of the Accursed**, burning realms and devouring divine beings until he stormed the **Temple of Sama-Ji** itself, where the **Chalice of Aeons** — vessel of **Kaiye Thunai** — rested.
 He drank from it, consuming the **Chr-Oma Cu’m**, the essence of all creation.
@@ -95,17 +95,16 @@ Traverse the cosmic plains in endless motion.
 | Control   | Action                 |
 | :-------- | :--------------------- |
 | `Space`   | Jump                   |
-| `←` / `→` | Move (Boss phase only) |
 
 * Avoid obstacles and collect **Divine Cards** to gain knowledge and temporary invulnerability.
 * Each card reveals hidden lore from *The Book of Owh Yeah.*
-* Upon collecting all eight, the **Crack of Destiny** appears — leap through it to face your fate.
+* Upon collecting all eight, the **Garganta of Kunju** appears — leap through it to face your fate.
 
 ---
 
 ### ⚔️ The Boss Phase — Battle of Ste’Vi Ra
 
-In the dark void of Datorim, **Ste’Vi Ra** returns.
+In the destroyed home planet of the Annunaki; Nibiru, **Ste’Vi Ra the Accursed one** returns like a Kandara Kawasaki.
 
 * Move left and right to align with the hovering Divine Cards.
 * **Hold `Space`** to charge the **Divine Attack Meter**.
@@ -117,6 +116,10 @@ Each successful strike invokes a **Divine Phrase**, such as:
 > “Kandara Kawasaki!”
 > “Kunju on the Loose!”
 > “Owh Yeah!”
+> "Kunida!"
+> "Suthule Choppa!"
+> "Umbe"
+> "Kaiyeh Thunnai"
 
 A missed strike consumes a card, which respawns after 8 seconds —
 for Sama-Ji’s mercy is infinite.
@@ -130,13 +133,13 @@ Defeat Ste’Vi Ra, and the heavens will proclaim:
 
 ## 🧘 Choose Your Divine Form
 
-| Mode               | | Description                     |
-| ------------------ | | ------------------------------- |
-| **Creation Mode**  | | The serene, primordial architect who predates existence, using the fundamental chant "Owh Yeah!" to structure reality.             |
-| **Loverboy Mode**  | | The irresistible Cosmic Playboy whose 'Kunjimani Keikaku' aura charms even the strongest foes, including the Accursed One.         |
-| **Annunaki Mode**  | | Supreme ruler of Dimension 69. Created Annunaki to guide Earth, intervened with the Great Flood, and maintains cosmic order.       |
-| **Kunjumani Form** | | The ultimate resetter. He descends from Dimension 69 to destroy and recreate the universe with a massive ritual fusion.            |
-| **Espada Mode**    | | The Cosmic Mariachi Guru who appears as Yeezus, sharing wisdom and miracles via tacos, churros, and a Kunjumonz mariachi band.     |
+| Mode               | | Description                                                                                                                           |
+| ------------------ | | ---------------------------------------------------------------------------------------------------------------------------------     |
+| **Creation Mode**  | | The serene, primordial architect who predates existence, using the fundamental chant "Owh Yeah!" to structure reality.                |
+| **Loverboy Mode**  | | The irresistible Cosmic Playboy whose 'Kunjimani Keikaku' aura charms even the strongest foes, including the Accursed One and Veesus. |
+| **Annunaki Mode**  | | Supreme ruler of Dimension 69. Created Annunaki to guide Earth, intervened with the Great Flood, and maintains cosmic order.          |
+| **Kunjumani Form** | | The ultimate resetter. He descends from Dimension 69 to destroy and recreate the universe with a massive ritual fusion.               |
+| **Espada Mode**    | | The Cosmic Mariachi Guru who appears as Yeezus, sharing wisdom and miracles via tacos, churros, and a Kunjumonz mariachi band.        |
 
 ---
 
@@ -150,7 +153,7 @@ Each card represents one of Sama-Ji’s holy fragments, scattered across the cos
 | 2    | Eyes & Head                    | Vikna Otsutsuki, Joshua Joestar, Son Isaac |
 | 3    | Heart                          | Rishi D. Owh Yeah                          |
 | 4    | Torso                          | Mob Siva, The Steroid                      |
-| 5    | Essence                        | Kaiye Thunnai, The Ritual of Creation        |
+| 5    | Sama Kunju                     | Kaiye Thunnai, The Ritual of Creation      |
 | 6    | Cosmic Kadavuleh               | The Original Croak                         |
 | 7    | Cosmic Playboy                 | Sama-Ji’s Loverboy Manifestation           |
 | 8    | The Reincarnation: Yezus Clyde | The Messiah of Infinite Drip               |
@@ -159,16 +162,16 @@ Each card represents one of Sama-Ji’s holy fragments, scattered across the cos
 
 ## 🔊 Divine Phrases and Their Audio Echoes
 
-| Phrase              | File      | Power                      |
-| :------------------ | :-------- | :------------------------- |
-| Kunju on The Loose! | `kun.wav` | Unleashes the Frog Legions |
-| Kunida!             | `knd.wav` | Splits Dimensions          |
-| Shinra Tensei!      | `shi.wav` | Absolute Destruction       |
-| Kandara Kawasaki!   | `kan.wav` | Summons the Drip Chariot   |
-| Suthule Choppa!     | `sut.wav` | Wind Cutter Technique      |
-| Umbe!               | `umb.wav` | The Cry of Chaos           |
-| Owh Yeah!           | `owh.wav` | The Sound of Creation      |
-| Kaiye Thunnai!      | `kai.wav` | Ritual of Universal Birth  |
+| Phrase              | File      | Power                                |
+| :------------------ | :-------- | :----------------------------------- |
+| Kunju on The Loose! | `kun.wav` | Unleashes the Kunju and let it loose |
+| Kunida!             | `knd.wav` | Bend over dimensions and split it    |
+| Shinra Tensei!      | `shi.wav` | Absolute Destruction                 |
+| Kandara Kawasaki!   | `kan.wav` | Summons the Drip Chariot             |
+| Suthule Choppa!     | `sut.wav` | Wind Cutter Technique                |
+| Umbe!               | `umb.wav` | The Cry of Chaos                     |
+| Owh Yeah!           | `owh.wav` | The Sound of Creation                |
+| Kaiye Thunnai!      | `kai.wav` | Ritual of Universal Birth            |
 
 ---
 
@@ -176,7 +179,7 @@ Each card represents one of Sama-Ji’s holy fragments, scattered across the cos
 
 At the end of each playthrough:
 
-* Your name, score, and message are inscribed in the **Scrolls of Supabase**.
+* Your name, score, and message are inscribed in the **Scrolls of Kunjus**.
 * A score of **999,999** signifies divine completion — enlightenment attained.
 * Leave your **message of devotion** to be immortalized among fellow disciples.
 
