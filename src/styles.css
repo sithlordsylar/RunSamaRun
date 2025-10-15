@@ -1,0 +1,141 @@
+:root{
+  --bg:#000;
+  --accent:#ff2b2b;
+  --muted:#77ff99;
+  --ui-bg: rgba(0,0,0,0.6);
+  --typewriter: "Courier New", Courier, monospace;
+}
+
+/* page reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body,#game-root{height:100%}
+body{
+  background:var(--bg);
+  color:#fff;
+  font-family: var(--typewriter);
+  overflow:hidden;
+}
+
+/* canvas container */
+#game-root{display:flex;align-items:center;justify-content:center;height:100vh;}
+
+/* pixel-retro look */
+canvas{
+  image-rendering: pixelated;
+  border: 6px solid #111;
+  box-shadow: 0 0 20px rgba(255,0,0,0.05);
+  background:#000;
+}
+
+/* overlays */
+.overlay{
+  position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:50;
+}
+.hidden{display:none}
+
+/* menu */
+.menu {
+  width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background: rgba(0,0,0,0.6);
+}
+.menu .panel{background:linear-gradient(0deg,#111,#222);border:2px solid var(--accent);
+  padding:20px;border-radius:8px;min-width:540px;text-align:center;}
+.menu h1{font-size:40px;color:var(--accent);margin-bottom:10px;letter-spacing:2px}
+.menu .btn{background:#111;border:2px solid var(--accent);color:#fff;padding:10px 18px;margin:8px;cursor:pointer;font-size:18px}
+.menu .btn:active{transform:translateY(1px)}
+
+/* character select */
+.char-frame{
+  width:150px;height:150px;border:6px solid #222;background:#000;display:flex;align-items:center;justify-content:center;margin:5px;
+}
+.char-portrait{max-width:100%;max-height:100%}
+
+/* message box */
+.msg-box {
+  max-height: 25vh;         /* fixed height */
+  overflow-y: auto;          /* scroll when text overflows */
+  width: 100%;               /* span panel width */
+  padding: 10px;
+  border: 2px solid red;     /* optional for visibility */
+  background: rgba(0,0,0,0.8);
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.msg-countdown{font-size:24px;color:var(--muted);margin-top:8px}
+
+/* card modal */
+.card-modal{
+  position:fixed;inset:0;display:flex;align-items:center;justify-content:center;z-index:60;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.98) 70%);
+}
+.card-modal .card-wrap{display:flex;gap:20px;align-items:flex-start}
+.card-modal img{width:360px;height:525px;object-fit:cover;border:4px solid #222}
+/* typewriter effect for small demos */
+.typewriter { overflow:hidden; white-space:pre-wrap; animation: typing 0.02s steps(1, end) forwards; }
+@keyframes typing { from { width: 0 } to { width: 100% } }
+
+/* HUD */
+.hud{
+  position:absolute;left:12px;top:12px;color:#fff;z-index:40;
+  background:var(--ui-bg);border:2px solid #111;padding:8px;border-radius:6px;font-size:16px;
+}
+.hud .score{font-size:20px;color:var(--muted);letter-spacing:1px}
+.hud .hp{color:var(--accent)}
+
+/* boss UI */
+.boss-ui{
+  position:absolute;right:12px;top:12px;z-index:40;background:var(--ui-bg);padding:8px;border:2px solid var(--accent);border-radius:6px
+}
+
+/* typing prompt overlay */
+.typing-overlay{position:absolute;inset:0;display:flex;align-items:end;justify-content:center;padding:40px;pointer-events:none}
+.typing-card{pointer-events:auto;background:rgba(0,0,0,0.85);padding:12px;border:2px solid var(--muted);border-radius:8px;color:#fff;font-size:20px}
+
+/* small helpers */
+.center{display:flex;align-items:center;justify-content:center}
+.row{display:flex;gap:8px;align-items:center}
+.small{font-size:12px;color:#ccc}
+
+/* Game container that scales proportionally */
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: black; /* black border around */
+  overflow: hidden;
+  position: relative; /* needed for overlays/HUD positioning */
+}
+
+
+/* Inner game content fixed at 1280x720, scaled */
+#game-root {
+  width: 1280px;
+  height: 720px;
+  transform-origin: top left;
+  /* scale dynamically */
+  transform: scale(calc(min(100vw / 1280, 100vh / 720)));
+}
+
+
+/* Scale dynamically */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Scale HUD, overlays, menus, and modals in sync with game */
+.overlay,
+.hud,
+.menu,
+.boss-ui,
+.typing-overlay,
+.card-modal {
+  position: absolute;
+  transform-origin: top left;
+  transform: scale(calc(min(100vw / 1280, 100vh / 720)));
+}
