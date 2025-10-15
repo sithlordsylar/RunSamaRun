@@ -576,7 +576,7 @@ setTimeout(async () => {
 
   try {
     // 🎧 Play GoGoGo transition first
-    const goAudio = new Audio('../assets/audio/gogogo.wav');
+    const goAudio = new Audio('./assets/audio/gogogo.wav');
     await goAudio.play();
     console.log("GoGoGo SFX started.");
 
