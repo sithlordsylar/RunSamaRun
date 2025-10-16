@@ -16,10 +16,10 @@ But fear not, through the wahyu of the Head of Sama-Ji: Son-Isaac, the creation 
 
 ## **⚠️WARNING⚠️**
 **Ensure your PC meet this minimum requirement:**
-OS: MacDowNux 69
-CPU: AMTel 6969
-Ram: 69TB
-GPU: Intel Radeon RTX690960-XT Strix
+OS: MacDowNux 69  
+CPU: AMTel 6969  
+Ram: 69TB  
+GPU: Intel Radeon RTX690960-XT Strix  
 Storage: 3.142ZB
 
 ---
