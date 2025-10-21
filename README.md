@@ -221,9 +221,6 @@ repo/
 │   └── images/
 ```
 
-* Hosted via **GitHub Pages**
-  → Settings → Pages → Deploy from Branch → `main` → Folder: `/public`
-
 ---
 
 ## ✨ Credits
