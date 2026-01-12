@@ -1,4 +1,4 @@
-# **The Sama Scroll II: Kunju's Bizarre Keikaku Piece**
+# **The Sama-Ji Scroll II: Kunju's Bizarre Keikaku Piece**
 
 **By The Divine Kunjumani Keikaku of Lord Vikramnantha Sama-Ji (Aizen's Step-Diddy/Daddy)**
 
