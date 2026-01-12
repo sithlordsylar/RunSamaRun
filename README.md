@@ -1,4 +1,4 @@
-# **Run Sama! Run!**
+# **The Sama Scroll II: Sama-Ji's Bizarre Keikaku Piece**
 
 **By The Divine Kunjumani Keikaku of Lord Vikramnantha Sama-Ji (Aizen's Step-Diddy/Daddy)**
 
@@ -11,7 +11,7 @@
 
 However we know human technology is not that developed to even be able to simulate 0.00001% of how it feels to be Sama-Ji.
 
-But fear not, through the wahyu of the Head of Sama-Ji: Son-Isaac, the creation power of the Right Eye of Sama-Ji the kama koduro; Vikna Otsutsuki along side of the Kunji-Force of the benevolent; Right Hand of Sama-ji balanced by the pure Chroma™ powered Heart of Sama-Ji; Rishi D. Owh Yeah, reinforced by the steroid of all being the Torso of Sama-Ji; Mob Siva, added with the touch of evil and chaos from the Left Hand of Sama-Ji Melvin Satoru and with a touch of the destruction ability of the Left Eye of Sama-Ji Joshua Joestar and lastly from the overflowing pee-pee of Sama-Ji; Vertine Sosuke the Diddy Daddy of Aizen have all come together to bless us with enough technology to simulate and experience 0.0000069% of Sama-Ji's life by experiencing the 0.000000000000069% of the Great Final Battle, the Apocalypse, the 4th Impact, the final battle to protect the universe from getting Rim Jobbed by Ste'Vi-Ra!
+But fear not, through the wahyu of the Head of Sama-Ji: Son-Isaac, the creation power of the Right Eye of Sama-Ji the kama koduro; Vikna Otsutsuki along side of the Kunji-Force of the benevolent Arvindo Freecs - Right Hand of Sama-ji balanced by the pure Chroma™ powered Heart of Sama-Ji; Rishi D. Owh Yeah, reinforced by the steroid of all being the Torso of Sama-Ji; Mob Siva, added with the touch of evil and chaos from the Left Hand of Sama-Ji Melvin Satoru and with a touch of the destruction ability of the Left Eye of Sama-Ji Joshua Joestar and lastly from the overflowing pee-pee of Sama-Ji; Vertine Sosuke the Diddy Daddy of Aizen have all come together to bless us with enough technology to simulate and experience 0.0000069% of Sama-Ji's life by experiencing the 0.000000000000069% of the Great Final Battle, the Apocalypse, the 4th Impact, the final battle to protect the universe from getting Rim Jobbed by Ste'Vi-Ra!
 
 
 ## **⚠️WARNING⚠️**
