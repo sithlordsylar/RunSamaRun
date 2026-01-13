@@ -236,9 +236,9 @@ repo/
 
 ## 🕉️ Final Verse
 
-> “When you croak ‘Owh Yeah’, the cosmos listens.
-> When you press ‘Space’, the heavens tremble.
-> When you collect all eight, the multiverse resets.
-> And in that silence — He smiles.”
+> “When you croak ‘Owh Yeah’, the cosmos listens as Sama-ji breathes new life.
+> When you press ‘Space’, the heavens tremble as Sama-Ji jumps.
+> When you collect all eight divine kunju card, the Third Impact begin and the multiverse resets.
+> And in that silence, from the Kunju of Alduin at the top of the peak of Dimension 69 — He smiles, menacingly, our Sama-Ji.”
 
 **Owh Yeah! Heil Sama-Ji!**
