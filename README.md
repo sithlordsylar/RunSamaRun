@@ -52,9 +52,9 @@ To maintain cosmic order, Sama-Ji fragmented parts of his own body, birthing the
 | **Joshua Joestar**    | Left Eye   | Future & Destruction — *Shinra Tensei* |
 | **Melvin Satoru**     | Left Hand  | Evil Energy — *Umbi-Force*             |
 | **Arvindo Freecss**   | Right Hand | Good Energy — *Kunji-Force*            |
-| **Rishi D. Owh Yeah** | Heart      | Balance — *Keeper of the Croak*        |
+| **Rishi D. Owh Yeah** | Heart      | Balance — *Keeper of the Holy Words*   |
 | **Son Isaac**         | Head       | Wisdom — *Bearer of Consciousness*     |
-| **Mob Siva**          | Torso      | Strength — *The Steroid*               |
+| **Mob Siva**          | Torso      | Strength — *The Fist of God*           |
 | **Sousuke Vertine**   | Peepee     | Creation — *Source of Kaiye Thunai*    |
 
 > “When Sama-Ji releases his divine essence into the waters, life begins anew.
