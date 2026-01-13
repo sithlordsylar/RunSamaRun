@@ -10,6 +10,7 @@ export const ASSETS = {
   players: [
     {
       id: 'player1',
+      name: 'Creation Mode',
       run: [
         `${BASE_IMG}/player1_run1_low.png`,
         `${BASE_IMG}/player1_run2_low.png`,
@@ -21,6 +22,7 @@ export const ASSETS = {
     },
     {
       id: 'player2',
+      name: 'Loverboy Mode',
       run: [
         `${BASE_IMG}/player2_run1_low.png`,
         `${BASE_IMG}/player2_run2_low.png`,
@@ -32,6 +34,7 @@ export const ASSETS = {
     },
     {
       id: 'player3',
+      name: 'God of the Annunaki',
       run: [
         `${BASE_IMG}/player3_run1_low.png`,
         `${BASE_IMG}/player3_run2_low.png`,
@@ -43,6 +46,7 @@ export const ASSETS = {
     },
     {
       id: 'player4',
+      name: 'Kunjumani Form',
       run: [
         `${BASE_IMG}/player4_run1_low.png`,
         `${BASE_IMG}/player4_run2_low.png`,
@@ -54,6 +58,7 @@ export const ASSETS = {
     },
     {
       id: 'player5',
+      name: 'Owh Yeah Espada!',
       run: [
         `${BASE_IMG}/player5_run1_low.png`,
         `${BASE_IMG}/player5_run2_low.png`,
