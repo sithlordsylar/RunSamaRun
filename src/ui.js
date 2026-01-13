@@ -93,15 +93,25 @@ export function showCardModal(cardDef, loreText, onClose) {
   window.addEventListener('keydown', closeHandler);
 }
 
+// ... existing imports and createMenu code ...
+
 // --- NEW FUNCTIONALITY: README Modal ---
 
 async function showHowToModal() {
   // 1. Create the Modal Structure
   const modal = document.createElement('div');
-  modal.className = 'overlay menu'; // Re-using your existing overlay/menu classes
+  modal.className = 'overlay menu';
+  // Added 'readme-panel' class for CSS control
+  // Added inline styles to Title to ensure it wraps and doesn't stretch container
   modal.innerHTML = `
-    <div class="panel" style="min-width: 650px;">
-      <h2 id="rm-title" style="color:var(--accent); margin-bottom:5px;">Loading Sacred Texts...</h2>
+    <div class="panel readme-panel">
+      <h2 id="rm-title" style="
+        color:var(--accent); 
+        margin-bottom:5px; 
+        word-wrap: break-word; 
+        white-space: normal;
+        line-height: 1.2;
+      ">Loading Sacred Texts...</h2>
       
       <div id="rm-content" class="readme-content">
         Fetching the Divine Scriptures...
@@ -136,7 +146,6 @@ async function showHowToModal() {
     const section = sections[currentIdx];
     
     titleEl.innerText = section.title || "Lore";
-    // Simple formatter: replace **text** with <b> and newlines with correct breaks
     contentEl.innerHTML = formatMarkdown(section.content);
     contentEl.scrollTop = 0; // Reset scroll
 
@@ -158,25 +167,13 @@ async function showHowToModal() {
     console.error(err);
     titleEl.innerText = "Error";
     contentEl.innerHTML = `<p style="color:red">Could not load README.md.</p>
-    <p>Please ensure <b>README.md</b> is in the same folder as index.html (e.g. in the 'public' folder).</p>`;
+    <p>Please ensure <b>README.md</b> is in the same folder as index.html.</p>`;
   }
 
   // 5. Button Logic
-  prevBtn.onclick = () => {
-    if (currentIdx > 0) {
-      currentIdx--;
-      render();
-    }
-  };
-  nextBtn.onclick = () => {
-    if (currentIdx < sections.length - 1) {
-      currentIdx++;
-      render();
-    }
-  };
-  modal.querySelector('#rm-close').onclick = () => {
-    document.body.removeChild(modal);
-  };
+  prevBtn.onclick = () => { if (currentIdx > 0) { currentIdx--; render(); } };
+  nextBtn.onclick = () => { if (currentIdx < sections.length - 1) { currentIdx++; render(); } };
+  modal.querySelector('#rm-close').onclick = () => { document.body.removeChild(modal); };
 }
 
 // Helper: Split Markdown by "## Header"
@@ -189,21 +186,17 @@ function parseMarkdownSections(text) {
 
   lines.forEach(line => {
     const trim = line.trim();
-    // Detect "## Title"
     if (trim.startsWith('## ')) {
-      // Push previous section if it has content
       if (currentLines.length > 0) {
         sections.push({ title: currentTitle, content: currentLines.join('\n') });
       }
-      // Start new section
-      currentTitle = trim.replace('## ', '').replace(/\*/g, '').trim(); // Remove ## and bold formatting from title
+      currentTitle = trim.replace('## ', '').replace(/\*/g, '').trim();
       currentLines = [];
     } else {
       currentLines.push(line);
     }
   });
 
-  // Push final section
   if (currentLines.length > 0) {
     sections.push({ title: currentTitle, content: currentLines.join('\n') });
   }
@@ -211,28 +204,68 @@ function parseMarkdownSections(text) {
   return sections;
 }
 
-// Helper: Simple Markdown Formatter for display
+// Helper: Better Markdown Formatter (Handles Tables & Inline Styles)
 function formatMarkdown(text) {
-  // Escape HTML first (safety)
-  let html = text
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
+  const lines = text.split('\n');
+  let html = '';
+  let inTable = false;
+  let isHeaderRow = false;
 
-  // Bold (**text**)
-  html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
-  
-  // Italic (*text*)
-  html = html.replace(/\*(.*?)\*/g, '<i>$1</i>');
+  lines.forEach(line => {
+    let trim = line.trim();
 
-  // Headers (###)
-  html = html.replace(/### (.*)/g, '<h3>$1</h3>');
+    // 1. Table Detection
+    if (trim.startsWith('|')) {
+      if (!inTable) {
+        inTable = true;
+        html += '<table class="md-table">';
+        isHeaderRow = true; // First row is header
+      }
 
-  // Blockquotes (>)
-  html = html.replace(/^> (.*)/gm, '<blockquote>$1</blockquote>');
-  
-  // Horizontal Rule (---)
-  html = html.replace(/^---/gm, '<hr>');
+      // Check for separator row (e.g. |---|---|)
+      if (trim.includes('---')) {
+        isHeaderRow = false; // Next rows are body
+        return; // Skip this line
+      }
 
+      const cells = trim.split('|').filter(c => c.trim() !== '');
+      const tag = isHeaderRow ? 'th' : 'td';
+      
+      html += '<tr>';
+      cells.forEach(cell => {
+        html += `<${tag}>${parseInline(cell.trim())}</${tag}>`;
+      });
+      html += '</tr>';
+
+    } else {
+      // Close table if we were in one
+      if (inTable) {
+        html += '</table>';
+        inTable = false;
+      }
+      
+      // 2. Standard Blocks
+      if (trim.startsWith('### ')) {
+        html += `<h3>${trim.replace('### ', '')}</h3>`;
+      } else if (trim.startsWith('> ')) {
+        html += `<blockquote>${parseInline(trim.replace('> ', ''))}</blockquote>`;
+      } else if (trim === '---') {
+        html += `<hr>`;
+      } else if (trim.length > 0) {
+        html += `<p>${parseInline(trim)}</p>`;
+      }
+    }
+  });
+
+  if (inTable) html += '</table>';
   return html;
+}
+
+// Helper: Parse Bold, Italic, Code
+function parseInline(text) {
+  return text
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") // Escape HTML
+    .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')         // Bold
+    .replace(/\*(.*?)\*/g, '<i>$1</i>')             // Italic
+    .replace(/`(.*?)`/g, '<code class="inline-code">$1</code>'); // Inline Code
 }
