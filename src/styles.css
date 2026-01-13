@@ -139,3 +139,48 @@ body, html {
   transform-origin: top left;
   transform: scale(calc(min(100vw / 1280, 100vh / 720)));
 }
+
+/* --- README Modal Styles --- */
+
+/* The fixed-size container for the text */
+.readme-content {
+  width: 600px;
+  height: 400px; /* Fixed height */
+  overflow-y: auto; /* Scrollbar if content is long */
+  text-align: left;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border: 1px solid #333;
+  margin: 15px 0;
+  font-family: var(--typewriter);
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserves newlines from markdown */
+}
+
+/* Markdown-ish styling inside the modal */
+.readme-content h1, .readme-content h2, .readme-content h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.readme-content strong {
+  color: var(--muted);
+}
+.readme-content blockquote {
+  border-left: 3px solid var(--muted);
+  padding-left: 10px;
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Footer navigation */
+.modal-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.nav-btn {
+  min-width: 40px;
+}
