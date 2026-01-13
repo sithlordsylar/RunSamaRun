@@ -3,6 +3,11 @@ import { ASSETS } from './assets.js';
 
 let menuBgm = null;
 
+// CONFIG: Path to your README. 
+// NOTE: Ensure README.md is in the same folder as index.html (e.g. public/) 
+// or adjust this path (e.g. '../README.md' if index.html is in src/ but that usually fails on web).
+const README_URL = './README.md';
+
 export function stopMenuBgm() {
   if (menuBgm) {
     menuBgm.pause();
@@ -28,31 +33,32 @@ export function createMenu(rootEl, startCallback, leaderboardCallback) {
   `;
 
   // 🎵 Menu BGM fix (global instance)
-	if (!menuBgm) {
-		menuBgm = new Audio('./assets/audio/menu_bgm.mp3');
-		menuBgm.loop = true;
-	}
+  if (!menuBgm) {
+    menuBgm = new Audio('./assets/audio/menu_bgm.mp3'); // Ensure this path matches your structure
+    menuBgm.loop = true;
+  }
+  
+  // Try to play BGM (browsers might block it until interaction)
+  menuBgm.play().catch(e => console.log("Click to play BGM"));
 
-	// Play once user interacts (browser security)
-	const tryPlay = () => {
-	if (menuBgm.paused) {
-		menuBgm.play().catch(() => {});
-	}
-	window.removeEventListener('click', tryPlay);
-};
-window.addEventListener('click', tryPlay);
+  // --- Event Listeners ---
 
-
+  // 1. Start Button
   rootEl.querySelector('#startBtn').onclick = () => {
     rootEl.querySelector('#startBtn').disabled = true; // lock button
     menuBgm.pause(); // stop menu bgm when game starts
     startCallback();
   };
 
+  // 2. Leaderboard Button
   rootEl.querySelector('#leaderBtn').onclick = leaderboardCallback;
+
+  // 3. How to Play Button (UPDATED)
   rootEl.querySelector('#howBtn').onclick = () => {
-    alert('Space to jump. Collect cards. In boss fight: move to highlighted card and type the Divine Words!');
+    showHowToModal(); 
   };
+
+  // 4. Lore Button
   rootEl.querySelector('#loreBtn').onclick = () => {
     window.location.href = 'https://sithlordsylar.github.io/artificialbaktha/';
   };
@@ -77,12 +83,156 @@ export function showCardModal(cardDef, loreText, onClose) {
   `;
   document.body.appendChild(modal);
 
-  function closeHandler(e) {
+  const closeHandler = (e) => {
     if (e.code === 'Space') {
-      document.body.removeChild(modal);
       window.removeEventListener('keydown', closeHandler);
+      document.body.removeChild(modal);
       onClose();
     }
-  }
+  };
   window.addEventListener('keydown', closeHandler);
+}
+
+// --- NEW FUNCTIONALITY: README Modal ---
+
+async function showHowToModal() {
+  // 1. Create the Modal Structure
+  const modal = document.createElement('div');
+  modal.className = 'overlay menu'; // Re-using your existing overlay/menu classes
+  modal.innerHTML = `
+    <div class="panel" style="min-width: 650px;">
+      <h2 id="rm-title" style="color:var(--accent); margin-bottom:5px;">Loading Sacred Texts...</h2>
+      
+      <div id="rm-content" class="readme-content">
+        Fetching the Divine Scriptures...
+      </div>
+
+      <div class="modal-nav">
+        <button id="rm-prev" class="btn nav-btn" disabled>&lt;</button>
+        <span id="rm-indicator" class="small">Page 1/1</span>
+        <button id="rm-next" class="btn nav-btn" disabled>&gt;</button>
+      </div>
+      
+      <div style="margin-top:15px;">
+        <button id="rm-close" class="btn" style="border-color: #fff;">Close</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  // 2. State
+  let sections = [];
+  let currentIdx = 0;
+
+  const titleEl = modal.querySelector('#rm-title');
+  const contentEl = modal.querySelector('#rm-content');
+  const prevBtn = modal.querySelector('#rm-prev');
+  const nextBtn = modal.querySelector('#rm-next');
+  const indicator = modal.querySelector('#rm-indicator');
+
+  // 3. Render Function
+  const render = () => {
+    if (sections.length === 0) return;
+    const section = sections[currentIdx];
+    
+    titleEl.innerText = section.title || "Lore";
+    // Simple formatter: replace **text** with <b> and newlines with correct breaks
+    contentEl.innerHTML = formatMarkdown(section.content);
+    contentEl.scrollTop = 0; // Reset scroll
+
+    // Update buttons
+    prevBtn.disabled = currentIdx === 0;
+    nextBtn.disabled = currentIdx === sections.length - 1;
+    indicator.innerText = `${currentIdx + 1} / ${sections.length}`;
+  };
+
+  // 4. Fetch and Parse
+  try {
+    const text = await fetch(README_URL).then(r => {
+      if (!r.ok) throw new Error("File not found");
+      return r.text();
+    });
+    sections = parseMarkdownSections(text);
+    render();
+  } catch (err) {
+    console.error(err);
+    titleEl.innerText = "Error";
+    contentEl.innerHTML = `<p style="color:red">Could not load README.md.</p>
+    <p>Please ensure <b>README.md</b> is in the same folder as index.html (e.g. in the 'public' folder).</p>`;
+  }
+
+  // 5. Button Logic
+  prevBtn.onclick = () => {
+    if (currentIdx > 0) {
+      currentIdx--;
+      render();
+    }
+  };
+  nextBtn.onclick = () => {
+    if (currentIdx < sections.length - 1) {
+      currentIdx++;
+      render();
+    }
+  };
+  modal.querySelector('#rm-close').onclick = () => {
+    document.body.removeChild(modal);
+  };
+}
+
+// Helper: Split Markdown by "## Header"
+function parseMarkdownSections(text) {
+  const lines = text.split('\n');
+  const sections = [];
+  
+  let currentTitle = "Intro / Start";
+  let currentLines = [];
+
+  lines.forEach(line => {
+    const trim = line.trim();
+    // Detect "## Title"
+    if (trim.startsWith('## ')) {
+      // Push previous section if it has content
+      if (currentLines.length > 0) {
+        sections.push({ title: currentTitle, content: currentLines.join('\n') });
+      }
+      // Start new section
+      currentTitle = trim.replace('## ', '').replace(/\*/g, '').trim(); // Remove ## and bold formatting from title
+      currentLines = [];
+    } else {
+      currentLines.push(line);
+    }
+  });
+
+  // Push final section
+  if (currentLines.length > 0) {
+    sections.push({ title: currentTitle, content: currentLines.join('\n') });
+  }
+
+  return sections;
+}
+
+// Helper: Simple Markdown Formatter for display
+function formatMarkdown(text) {
+  // Escape HTML first (safety)
+  let html = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+
+  // Bold (**text**)
+  html = html.replace(/\*\*(.*?)\*\*/g, '<b>$1</b>');
+  
+  // Italic (*text*)
+  html = html.replace(/\*(.*?)\*/g, '<i>$1</i>');
+
+  // Headers (###)
+  html = html.replace(/### (.*)/g, '<h3>$1</h3>');
+
+  // Blockquotes (>)
+  html = html.replace(/^> (.*)/gm, '<blockquote>$1</blockquote>');
+  
+  // Horizontal Rule (---)
+  html = html.replace(/^---/gm, '<hr>');
+
+  return html;
 }
