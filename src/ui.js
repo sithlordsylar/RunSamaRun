@@ -20,7 +20,7 @@ export function createMenu(rootEl, startCallback, leaderboardCallback) {
   rootEl.innerHTML = `
     <div class="menu" style="background:url('${ASSETS.ui.startBg}') center/cover no-repeat;">
       <div class="panel">
-        <h1>Sama-Ji Runner</h1>
+        <h1>The Sama-Ji Scroll II: Kunju's Bizarre Keikaku Piece</h1>
         <div class="row center">
           <button id="startBtn" class="btn">Start Game</button>
           <button id="leaderBtn" class="btn">Leaderboard</button>
